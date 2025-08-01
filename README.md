@@ -1,31 +1,31 @@
-🕹️ Rock Paper Scissors Game – Python Console App
+#🕹️ Rock Paper Scissors Game – Python Console App
 Description:
 
 A simple console-based Rock Paper Scissors game built in Python, where a user competes against the computer. The game includes ASCII art representations of each move and uses basic control flow and random number generation to simulate gameplay.
 
-🔧 Features:
+#🔧 Features:
 
-Interactive command-line interface
+--> Interactive command-line interface
 
-User input validation for valid choices (0, 1, 2)
+--> User input validation for valid choices (0, 1, 2)
 
-Random computer choice generation using random.randint()
+--> Random computer choice generation using random.randint()
 
-Visual representation using ASCII art for Rock, Paper, and Scissors
+--> Visual representation using ASCII art for Rock, Paper, and Scissors
 
-Clear win/lose/draw game logic using conditionals
+--> Clear win/lose/draw game logic using conditionals
 
-🛠️ Technologies Used:
+#🛠️ Technologies Used:
 
 Python 3
 
 Standard libraries: random
 
-📌 How to Play:
+#📌 How to Play:
 
 Run the script.
 
-Input:
+##Input:
 
 0 for Rock
 
@@ -37,12 +37,10 @@ The computer makes a random choice.
 
 The winner is declared based on classic game rules.
 
-💻 Sample Output:
+#💻 Sample Output:
 
-pgsql
-Copy
-Edit
 What do you choose ? Type 0 for Rock or 1 for paper or 2 for Scissors
+
 0
 
     _______
@@ -61,21 +59,25 @@ Computer chose : 2
       (____)
 ---.__(___)
 
+
 You win
-📁 Project Structure:
 
-Copy
-Edit
+
+#📁 Project Structure:
+
 rock_paper_scissors.py
+
 README.md
-✅ Skills Demonstrated:
 
-Control Flow (if-elif-else)
 
-Error Handling
+#✅ Skills Demonstrated:
 
-User Input Processing
+1) Control Flow (if-elif-else)
 
-Randomization with random
+2) Error Handling
 
-Console-based Game Development
+3) User Input Processing
+
+4) Randomization with random
+
+5) Console-based Game Development
