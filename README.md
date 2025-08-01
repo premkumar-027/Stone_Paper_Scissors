@@ -98,5 +98,3 @@ else:
     print(game_images[user_choice])
 
    ........
-
-
