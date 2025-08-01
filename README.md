@@ -1,83 +1,102 @@
-#🕹️ Rock Paper Scissors Game – Python Console App
-Description:
+# 🪨🧻✂️ Rock Paper Scissors Game (Python Console Version)
 
-A simple console-based Rock Paper Scissors game built in Python, where a user competes against the computer. The game includes ASCII art representations of each move and uses basic control flow and random number generation to simulate gameplay.
+This is a simple **Stone Paper Scissors** game built in Python for the command line. The player competes against the computer, and the game includes **ASCII visuals** to enhance the experience.
 
-#🔧 Features:
+---
 
---> Interactive command-line interface
+## 🎮 How to Play
 
---> User input validation for valid choices (0, 1, 2)
+- You choose:
+  - `0` for **Rock**
+  - `1` for **Paper**
+  - `2` for **Scissors**
+- The computer randomly chooses its move.
+- The game will then:
+  - Display both moves as ASCII art
+  - Announce the winner or a draw
 
---> Random computer choice generation using random.randint()
+---
 
---> Visual representation using ASCII art for Rock, Paper, and Scissors
+## 🛠 Technologies Used
 
---> Clear win/lose/draw game logic using conditionals
+- **Python 3**
+- `random` module for computer choice
+- ASCII Art for visual representation
+- Console input/output
 
-#🛠️ Technologies Used:
+---
 
-Python 3
+## 🚀 How to Run the Game
 
-Standard libraries: random
+1. Make sure Python is installed (`python --version`)
+2. Download or clone this repo.
+3. Run the game:
 
-#📌 How to Play:
+---
 
-Run the script.
+## 📂 Project Structure
 
-##Input:
+rock-paper-scissors/
 
-0 for Rock
+│
 
-1 for Paper
+├── rock_paper_scissors.py # 🎮 Game source code
 
-2 for Scissors
+├── README.md # 📄 Project documentation
 
-The computer makes a random choice.
+├── .gitignore # ⚙️ Files to ignore in Git
 
-The winner is declared based on classic game rules.
+└── screenshot.png # 🖼 Optional game screenshot
 
-#💻 Sample Output:
 
-What do you choose ? Type 0 for Rock or 1 for paper or 2 for Scissors
 
-0
+---
 
+
+## 📄 Full Game Code Preview
+
+```python
+import random
+
+# ASCII Art for the choices
+rock = '''
     _______
 ---'   ____)
       (_____)
       (_____)
       (____)
 ---.__(___)
+'''
 
-Computer chose : 2
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
 
+scissors = '''
     _______
 ---'   ____)____
           ______)
        __________)
       (____)
 ---.__(___)
+'''
+
+game_images = [rock, paper, scissors]
+
+# User input
+user_choice = int(input("Type 0 for Rock, 1 for Paper, or 2 for Scissors:\n"))
+
+if user_choice < 0 or user_choice > 2:
+    print("Invalid input. You lose!")
+else:
+    print("You chose:")
+    print(game_images[user_choice])
+
+   ........
 
 
-You win
-
-
-#📁 Project Structure:
-
-rock_paper_scissors.py
-
-README.md
-
-
-#✅ Skills Demonstrated:
-
-1) Control Flow (if-elif-else)
-
-2) Error Handling
-
-3) User Input Processing
-
-4) Randomization with random
-
-5) Console-based Game Development
